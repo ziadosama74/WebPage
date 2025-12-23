@@ -1,0 +1,55 @@
+body {
+    margin: 0;
+    padding-top: 50px;
+}
+
+
+/* b. Use list style type: none for the list items. */
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;                 /* make items in one line */
+    justify-content: center;       /* center menu horizontally */
+    align-items: center;           /* center menu vertically */
+}
+
+/* c. Use display: inline-block for the list items. (Why?)
+   To make items appear in one line and still accept width & height */
+nav ul li {
+    display: inline-block;
+    margin: 0 15px;
+}
+
+/* Style links */
+nav ul li a {
+    display: flex;                 /* center text inside link */
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    font-size: 18px;
+    width: 80px;
+    height: 50px;
+    background-color: black;
+    color: white;
+}
+
+/* Handle hover */
+nav ul li a:hover {
+    background-color: rgb(5, 174, 5);
+}
+
+/* Navigation bar */
+nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: black;
+    height: 50px;
+    justify-items: first baseline;
+    z-index: 100;
+}
+
+div{
+    margin-top: 0;
+}
